@@ -1,0 +1,10 @@
+services:
+  site:
+    build: .
+    ports:
+      - "8085:80"
+    restart: unless-stopped
+
+networks:
+  proxy:
+    external: true    
