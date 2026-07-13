@@ -1,5 +1,6 @@
 services:
   site:
+    container_name: site
     build: .
     ports:
       - "8085:80"
